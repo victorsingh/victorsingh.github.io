@@ -1,0 +1,116 @@
+<html>
+
+<head>
+	<title>Parcel Sandbox</title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel = "stylesheet" type = "text/css" href = "styles.css"/>
+	<link rel = "stylesheet" type = "text/css" href = "carousel.css"/>
+</head>
+
+<body>
+	<nav id = "nav-bar">
+		<ul id = "nav-list">
+			<li>
+				<a class="nav-element" href = "./index.html"> Home </a>
+				<hr width="20">
+			</li>
+			<li>
+				<a class="nav-element" href= 'https://learn.zybooks.com/zybook/QCCSCI355TeitelmanFall2018'> Zybooks </a>
+				<hr id = "line thing" width="20">
+			</li>
+			<li>
+				<a class="nav-element" href = './browserinfo.html'> Browser Information </a>
+				<hr width="20">
+			</li>
+			<li>
+				<a class="nav-element" href = './contact.html'> Contact </a>
+				<hr width="20">
+			</li>
+			<li id = "assignments">
+				<a class="nav-element"> Assignments </a>
+				<hr width="20">
+				<input type = "checkbox" id = "assignment-menu"/>
+				<label class="popup-nav-box" id = "popup-assignments" for = "assignment-menu">
+					<ul id = "nav-list-assignment">
+						<li>
+							<a href = "/assignment0">Assignment 0</a>
+						</li>
+						<li>
+							<a href= "/">Assignment 1</a>
+					</li>
+					</ul>
+				</label>
+			</li>
+		</ul>
+	</nav>
+	<section style = "flex-wrap: wrap; justify-content: space-around">
+		<div class = "poster">
+			<h1> Hey and welcome to Victor Singh's homepage! </h1>
+			<h2> This will be the place to find my work for CS 355 </h2>
+			<!-- <div class = "rounded-button">
+				<span>
+					Learn More
+				</span>
+			</div> -->
+		</div>
+		<img id = "home-svg" src = '../university.svg' draggable="false">
+	</section>
+	<section  style =" flex-wrap: wrap; justify-content: space-around; flex-direction: flex-end; background-image: linear-gradient(to top right, #F0AE42, #DE9B7C);">
+		  <div style = "">
+				<div style = "
+				background-color: gray;
+				margin: 0 auto;
+				height: 25vw;
+				width: 25vw;
+				background-size: 110% 103%;;
+				background-image: url('https://tse4.mm.bing.net/th?id=OIP.JBobl6QegiD_wUHDU6ViKAHaEK&pid=Api');
+				background-repeat: no-repeat;
+				background-position: center;
+				min-width: 200px;
+				min-height: 200px;
+				border-radius: 50%;"></div>
+								</div>
+					<div class = "poster">
+						<h1 id = "assingment-title"> About Assignment 1 </h1>
+						<p id = "assignment-description"> Assignment 0 asked us to create a basic hello world page.</p>
+						<a class = "rounded-button" href = './assignment0.html' style = "text-decoration: none; color:white;">
+							<div >
+								<span>
+									View Assignment
+								</span>
+							</div>
+						</a>
+					</div>
+		</section>
+		<section  style ="flex-wrap: wrap; justify-content: space-between; flex-direction: row-reverse; background-image: linear-gradient(to top right, pink, lightpink);">
+			<div style = "margin: 0 auto;">
+				<div style = "
+				background-color: gray;
+				margin: 0 auto;
+				height: 25vw;
+				width: 25vw;
+				background-size: 110% 103%;;
+				background-image: url('https://www.windowsteam.com.br/wp-content/uploads/2016/11/edge-chrome-firefox.jpg');
+				background-repeat: no-repeat;
+				background-position: center;
+				min-width: 200px;
+				min-height: 200px;
+				border-radius: 50%;"></div>
+				</div>
+				<div class = "poster">
+					<h1 id = "assingment-title"> About Assignment 1 </h1>
+					<p id = "assignment-description"> Assignment 1 asked us to add styling to our website, and have a navigation bar <br>containing our browser info and assignments.</p>
+					<a class = "rounded-button" href = './browserinfo.html' style = "text-decoration: none; color:white;">
+						<div>
+							<span>
+								View Assignment
+							</span>
+						</div>
+					</a>
+				</div>
+			</section>
+</body>
+	<script src="src/index.js"></script>
+
+</html>

@@ -1,0 +1,58 @@
+<html>
+
+<head>
+	<title>Parcel Sandbox</title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel = "stylesheet" type = "text/css" href = "styles.css"/>
+</head>
+
+<body>
+
+    <nav id = "nav-bar">
+        <ul id = "nav-list">
+          <li>
+            <a class="nav-element" href = "./index.html"> Home </a>
+            <hr width="20">
+          </li>
+          <li>
+            <a class="nav-element" href= 'https://learn.zybooks.com/zybook/QCCSCI355TeitelmanFall2018'> Zybooks </a>
+            <hr id = "line thing" width="20">
+          </li>
+          <li>
+            <a class="nav-element" href = './browserinfo.html'> Browser Information </a>
+            <hr width="20">
+          </li>
+          <li>
+            <a class="nav-element" href = './contact.html'> Contact </a>
+            <hr width="20">
+          </li>
+          <li id = "assignments">
+            <a class="nav-element"> Assignments </a>
+            <hr width="20">
+            <input type = "checkbox" id = "assignment-menu"/>
+            <label class="popup-nav-box" id = "popup-assignments" for = "assignment-menu">
+              <ul id = "nav-list-assignment">
+                <li>
+                  <a href = "/assignment0">Assignment 0</a>
+                </li>
+                <li>
+                  <a href= "/">Assignment 1</a>
+              </li>
+              </ul>
+            </label>
+          </li>
+        </ul>
+      </nav>
+	<section>
+		<div class = "poster">
+			
+		</div>
+	</section>
+</body>
+  <script src="src/index.js"></script>
+  <script src="src/info.js"></script>
+  <script>
+      document.getElementsByClassName('poster')[0].appendChild(processHtml(ContactInfo))
+  </script>
+</html>
